@@ -29,3 +29,5 @@ app.get("/news", function(req, res) {
 app.listen(3000, function() {
 	console.log("server listening")
 });
+
+WHATS UP CHRIS?!
