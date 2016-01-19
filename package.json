@@ -2,6 +2,7 @@
   "name": "twitter-js",
   "version": "1.0.0",
   "description": "twitter-js",
+  "repository": "https://github.com/cde-v/twitter-js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
