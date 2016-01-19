@@ -43,11 +43,7 @@ app.get("/views", function (req, res) {
 // 	res.send("we got the news get");
 // });
 
-
-
-
-
-
 app.listen(3000, function() {
 	console.log("server listening")
 });
+
