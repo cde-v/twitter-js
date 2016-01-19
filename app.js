@@ -41,15 +41,7 @@ app.get("/views", function (req, res) {
 // 	res.send("we got the news get");
 // });
 
-
-
-
-
-
 app.listen(3000, function() {
 	console.log("server listening")
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> c73440b72c1cef4ba9df04a9ba4197be881fab0f
+
