@@ -1,8 +1,13 @@
 var chalk = require("chalk");
 var swig = require("swig");
 var express = require("express");
-var routes = require("./routes")
+var bodyParser = require('body-parser');
+var socketio = require("socket.io");
 var app = express();
+var routes = require("./routes");
+var router = routes(io);
+
+app.use("/", router);
 
 // var locals = {
 // 	title: "An Example",
@@ -19,7 +24,11 @@ app.engine("html", swig.renderFile);
 app.set("view engine", "html");
 app.set("views", __dirname + "/views");
 
-app.use("/", routes);
+
+
+
+
+
 
 // app.get("/stylesheets/style.css", function(req, res){
 // 	res.sendFile("./public/stylesheets/stylesheets.css");
@@ -48,7 +57,8 @@ app.use(express.static("public"));
 // 	res.send("we got the news get");
 // });
 
-app.listen(3000, function() {
+var server = app.listen(3000, function() {
 	console.log("server listening")
 });
 
+var io = socketio.listen

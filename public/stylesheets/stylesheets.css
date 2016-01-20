@@ -60,5 +60,9 @@ code {
 
 .link {
   color: blue;
-  font-size: 25px;
+  font-size: 12px;
+}
+
+h1.navbarfix {
+  margin-top: 100px;
 }
